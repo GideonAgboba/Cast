@@ -1,0 +1,25 @@
+.login-container{
+	margin-top: 4em;
+}
+.login-container input{
+	border: 1px solid #fd66c3;
+	color: #fd66c3 !important;
+	background: #fff;
+}
+.login-container .checkbox{
+	display: flex;
+	font-size: 13px;
+	color: #000;
+}
+.login-container .checkbox div{
+	border: 1px solid #fd66c3;
+	color: #fd66c3;
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+.login-container .checkbox input{
+	display: none;
+}
