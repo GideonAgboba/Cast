@@ -50,9 +50,16 @@
                             <img src="assets/img/portfolio/home-port1.png" alt="pro1" />
                             <div class="product_info">
                                 <div class="product_info_text">
-                                    <div class="product_info_text_inner">
-                                        <i class="ion ion-camera"></i>
-                                        <h4>project name</h4>
+                                    <div class="product_info_text_inner text-center">
+                                        <i class="ion ion-male"></i>
+                                        <h4>Jame Kelly</h4>
+                                        <small>Artist</small>
+                                        <div class="rating">
+                                            <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                                            <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                                            <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                                            <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

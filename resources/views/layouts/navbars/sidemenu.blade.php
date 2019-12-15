@@ -11,32 +11,32 @@
     <!--main menu -->
     <div class="side_menu_section">
         <ul class="menu_nav">
-            <li class="active">
+            <li class="@if(\Request::is('/')) active @endif">
                 <a href="{{url('/')}}">
                     Home
                 </a>
             </li>
-            <li>
+            <li class="@if(\Request::is('about')) active @endif">
                 <a href="{{url('/about')}}">
                     About Us
                 </a>
             </li>
-            <li>
+            <li class="@if(\Request::is('how-it-works')) active @endif">
                 <a href="{{url('/how-it-works')}}">
                     How It Works
                 </a>
             </li>
-            <li>
+            <li class="@if(\Request::is('services')) active @endif">
                 <a href="{{url('/services')}}">
                     Services
                 </a>
             </li>
-            <li>
+            <li class="@if(\Request::is('blog')) active @endif">
                 <a href="{{url('/blog')}}">
                     Blog
                 </a>
             </li>
-            <li>
+            <li class="@if(\Request::is('contact')) active @endif">
                 <a href="{{url('/contact')}}">
                     Contact
                 </a>
@@ -49,10 +49,10 @@
     <div class="side_menu_section">
         <h4 class="side_title">Explore:</h4>
         <ul class="filter_nav">
-            <li class="activ"><a href="{{url('/actors')}}" >Actors</a></li>
-            <li> <a href="{{url('/models')}}">Models</a></li>
-            <li><a href="{{url('/login')}}">Login</a></li>
-            <li><a href="{{url('/register')}}">Sign Up</a></li>
+            <li class="@if(\Request::is('actors') || \Request::is('actors/*')) active @endif"><a href="{{url('/actors')}}" >Actors</a></li>
+            <li class="@if(\Request::is('models') || \Request::is('models/*')) active @endif"> <a href="{{url('/models')}}">Models</a></li>
+            <li class="@if(\Request::is('login') || \Request::is('login/*')) active @endif"><a href="{{url('/login')}}">Login</a></li>
+            <li class="@if(\Request::is('register') || \Request::is('register/*')) active @endif"><a href="{{url('/register')}}">Sign Up</a></li>
         </ul>
     </div>
     <!--filter menu end -->
